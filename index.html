@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project1</title>
+    <style>
+        body {
+            background-image: url(https://s3.envato.com/files/71f1fd7e-523b-4201-b469-4c6194f4d9ca/inline_image_preview.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 900px;
+        }
+
+        .left {
+            color: white;
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 6px;
+            margin-left: 2px;
+            width: 10px;
+        }
+
+        .logo {
+            width: 62px;
+            display: inline-block;
+            margin-left: 7px;
+            margin-top: 7px;
+        }
+
+        .heading {
+            width: 94px;
+        }
+
+        .right {
+            color: white;
+            display: inline-block;
+            position: absolute;
+            top: 175px;
+            right: 43px;
+            width: 400px;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        .mid {
+            color: white;
+            display: block;
+            width: 71px;
+            margin: auto;
+            position: absolute;
+            left: 300px;
+            top: 0px;
+        }
+
+        .navbar {
+            height: 52px;
+            width: 800px;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar li a {
+            padding: 0px 25px;
+            text-decoration: none;
+            color: white;
+            font-size: 103%;
+            font-weight: bold;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .navbar a:hover {
+            color: aqua;
+        }
+
+        .navbar a.active {
+            color: #62c7ec;
+        }
+
+        .right .btn:hover,
+        #b1:hover {
+            color: aqua;
+        }
+
+        .right .btn {
+            padding: 0px 10px;
+            margin: 0px 10px;
+            border-radius: 10px;
+            border: 2px solid white;
+            background-color: rgb(39, 43, 45);
+            color: white;
+            width: 117px;
+            height: 36px;
+            text-align: center;
+            font-size: 102%;
+            cursor: pointer;
+        }
+
+        .right .div1 {
+            border-radius: 10px;
+            width: 361px;
+            height: 221px;
+        }
+
+        .right .div1 ul {
+            margin-left: 84px;
+            line-height: 2em;
+        }
+
+        .right #div2 {
+            margin-left: 59px;
+            padding-bottom: 18px;
+        }
+
+        #hi1 {
+            margin-left: 20px;
+            width: 400px
+        }
+
+        #idiv {
+            border: 2px solid white;
+            position: absolute;
+            top: 175px;
+            width: 294px;
+            height: 381px;
+            left: 129px;
+            border-radius: 10px;
+        }
+
+        .form-group {
+            display: block;
+            width: 215px;
+            height: 44px;
+            margin-left: 41px;
+            padding-top: 1px;
+        }
+
+        input {
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 28px;
+            width: 208px;
+            text-align: center;
+        }
+
+        #bnn1 {
+            margin-left: 87px;
+            margin-top: 23px;
+        }
+
+        #b1 {
+            color: white;
+            border-radius: 10px;
+            border: 2px solid white;
+            background-color: rgb(39, 43, 45);
+            width: 117px;
+            height: 36px;
+            text-align: center;
+            font-size: 102%;
+            cursor: pointer;
+        }
+
+        #h4 {
+            color: white;
+            font-size: 124%;
+            text-align: center;
+        }
+
+        #lastdiv {
+            display: inline-block;
+            width: 520px;
+            margin-top: 683px;
+            margin-left: 527px;
+        }
+
+        .mydiv {
+            display: inline-block;
+            border: 3px solid #03171f;
+            width: 131px;
+            margin-right: 14px;
+            background-color: white;
+            margin-bottom: 40px;
+        }
+
+        .myh5 {
+            color: #0c556d;
+            text-align: center;
+            font-size: 110%;
+            cursor: pointer;
+        }
+
+        .newpara {
+            color: #0c556d;
+            cursor: pointer;
+            font-size: smaller;
+            font-weight: bold;
+        }
+
+        .myh5:hover,.newpara:hover {
+            color: rgb(1, 30, 30);
+        }
+
+        .new1 {
+            padding-left: 5px;
+        }
+
+        @media only screen and (max-width:600px) {
+            body {
+                background-image: url(https://s3.envato.com/files/71f1fd7e-523b-4201-b469-4c6194f4d9ca/inline_image_preview.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 900px;
+                background-attachment: fixed;
+                background-position: center;
+            }
+
+            .navbar li a {
+                font-size: 2.3rem;
+            }
+
+            .navbar a:hover {
+                font-size: 2.3rem;
+            }
+
+            .logo {
+                width: 135px;
+            }
+
+            .heading {
+                width: 218px;
+                font-size: 2rem;
+            }
+
+            #idiv {
+                border: 2px solid white;
+                position: absolute;
+                top: 410px;
+                width: 294px;
+                height: 381px;
+                left: 436px;
+                border-radius: 10px;
+                transform: scale(1.3);
+            }
+
+            .right {
+                color: white;
+                display: inline-block;
+                position: absolute;
+                top: 1058px;
+                left: 384px;
+                width: 400px;
+                border: 2px solid white;
+                border-radius: 10px;
+                transform: scale(1.3);
+            }
+
+            #lastdiv {
+                display: inline-block;
+                width: 520px;
+                margin-top: 1589px;
+                margin-left: 368px;
+                transform: scale(1.3);
+            }
+        }
+
+        @media only screen and (min-width:600px) and (max-width:1200px) {
+            body {
+                background-image: url(https://s3.envato.com/files/71f1fd7e-523b-4201-b469-4c6194f4d9ca/inline_image_preview.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 900px;
+                background-attachment: fixed;
+                background-position: center;
+            }
+
+            #idiv {
+                border: 2px solid white;
+                position: absolute;
+                top: 175px;
+                width: 294px;
+                height: 381px;
+                left: 129px;
+                border-radius: 10px;
+            }
+
+            .right {
+                color: white;
+                display: inline-block;
+                position: absolute;
+                top: 213px;
+                left: 597px;
+                width: 400px;
+                border: 2px solid white;
+                border-radius: 10px;
+            }
+
+            #lastdiv {
+                display: inline-block;
+                width: 520px;
+                margin-top: 683px;
+                margin-left: 368px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="left">
+        <img src="https://i.pinimg.com/736x/42/9d/63/429d631659a11a9eb666b103d811470a.jpg" alt="" class="logo">
+        <div class="heading">
+            Rima's Gym
+        </div>
+    </div>
+    <div class="div3" id="idiv">
+        <h4 id="h4">
+            Fill the form to join my gym
+        </h4>
+        <form action="#">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="type your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="type your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="type your address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="type your phone no">
+            </div>
+            <div class="form-group">
+                <input type="email" name="name" placeholder="type your email id">
+            </div>
+            <div class="btn1" id="bnn1">
+                <button id="b1">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="right">
+        <div class="div1">
+            <h2 id="hi1">
+                Rima's Gym and fitness institution
+            </h2>
+            <ul>
+                <li>Best gym in palta</li>
+                <li>Good infastructure</li>
+                <li>experienced trainers</li>
+                <li>Good Location</li>
+            </ul>
+        </div>
+        <div id="div2">
+            <button class="btn">Mail Us</button>
+            <button class="btn">Call Us</button>
+        </div>
+    </div>
+    <div class="mid">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Trainers Details</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="lastdiv">
+        <div class="mydiv">
+            <h5 class="myh5">Special Offer</h5>
+            <p class="new1">
+                Spacial discount for summer.
+                Harry up!!!</p>
+            <p class="newpara">read more.....</p>
+        </div>
+        <div class="mydiv">
+            <h5 class="myh5">Recruitment</h5>
+            <p class="new1">
+                Are you good trainer? contact me for job</p>
+            <p class="newpara">read more.....</p>
+        </div>
+        <div class="mydiv">
+            <h5 class="myh5">Special Course</h5>
+            <p class="new1">
+                New yoga course coming from 1st june 2022</p>
+            <p class="newpara">read more.....</p>
+        </div>
+    </div>
+</body>
+
+</html>
